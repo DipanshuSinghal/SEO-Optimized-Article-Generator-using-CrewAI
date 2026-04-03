@@ -1,0 +1,25 @@
+idea_generation_task:
+  description: >
+    Generate 3–5 content ideas, a catchy headline, and a structured
+    outline for the given topic: {topic}.
+  expected_output: >
+    A list of content ideas, one selected headline,
+    and a detailed content outline.
+  agent: content_idea_agent
+
+seo_optimization_task:
+  description: >
+    Take the content outline and optimize it using SEO best practices.
+    Add relevant keywords, improve headings, and suggest a meta description.
+  expected_output: >
+    SEO-optimized outline with keywords and meta description.
+  agent: seo_optimizer_agent
+
+content_editing_task:
+  description: >
+    Refine and polish the SEO-optimized content.
+    Improve clarity, tone, flow, and grammar.
+    Make it ready for publishing.
+  expected_output: >
+    Final high-quality, publish-ready content.
+  agent: content_editor_agent
