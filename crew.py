@@ -88,6 +88,6 @@ class ContentCreation():
             tasks=self.tasks, # Automatically created by the @task decorator
             process=Process.sequential,
             verbose=True,
-            llm=LLM(model="gemini-2.5-flash",base_url="https://generativelanguage.googleapis.com/v1beta/openai/",api_key='AIzaSyDjfuev6EimdTUzgz3TbHYng7RDPhX5o4k'),
+            llm=LLM(model="gemini-2.5-flash",base_url="https://generativelanguage.googleapis.com/v1beta/openai/",api_key=os.getenv("GEMINI_API_KEY")),
             # process=Process.hierarchical, # In case you wanna use that instead https://docs.crewai.com/how-to/Hierarchical/
         )
